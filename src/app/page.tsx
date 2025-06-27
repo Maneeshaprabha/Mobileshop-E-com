@@ -5,6 +5,7 @@ import { Reviews } from "@/components/Reviews";
 import { Check, Star } from "lucide-react";
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <div className="bg-slate-50">
@@ -176,6 +177,30 @@ export default function Home() {
         <div className="pt-16">
           <Reviews />
         </div>
+      </section>
+
+
+      <section>
+        <MaxWidthWrapper className="PY-24">
+          <div className=" mb-12 px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl sm:text-center">
+                <h2 className=" order-1 mt-2 tracking-tight font-bold text-center text-balance  !leading-tight text-5xl md:text-6xl text-gray-900">
+            Upload your photo and get <span className="relative px-2  bg-green-600 text-white" >your own case </span> now
+            </h2>
+            </div>
+          </div>
+
+<div className="mx-auto max-w-6xl px-6 lg:px-8">
+  <div className="relative flex flex-col items-center justify-center md:gap  py-24">
+    <img src='/assets/arrow.png'
+      className=" absolute top-[25rem] md:top-1/2
+       -translate-y-1/2 z-10 rotate-90 md:rotate-0 "/>
+  
+   <div className=" relative h-80 md:h-full w-full md:justify-end-safe max-w-sm  rounded-xl bg-gray-900/5 rign-inset ring-gray-900/10 lg:rounded-2xl"></div>
+  </div>
+</div>
+
+        </MaxWidthWrapper>
       </section>
 
     </div>
